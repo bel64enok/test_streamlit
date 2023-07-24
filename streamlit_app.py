@@ -3,8 +3,6 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-import time
-import openai
 
 # Read in data from the Google Sheet.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
