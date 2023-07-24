@@ -22,12 +22,12 @@ for row in df.itertuples():
 with st.chat_message("assistant"):
     st.write("new chart")
     st.bar_chart(np.random.randn(30, 3))
-'''
+
 #new prompt
 prompt = st.chat_input("Say something")
 if prompt:
     st.write(f"User has sent the following prompt: {prompt}")
-
+'''
 
 st.title("Echo Bot")
 
