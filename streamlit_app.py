@@ -22,7 +22,7 @@ for row in df.itertuples():
 with st.chat_message("assistant"):
     st.write("new chart")
     st.bar_chart(np.random.randn(30, 3))
-
+'''
 #new prompt
 prompt = st.chat_input("Say something")
 if prompt:
@@ -55,7 +55,7 @@ with st.chat_message("assistant"):
     st.markdown(response)
 # Add assistant response to chat history
 st.session_state.messages.append({"role": "assistant", "content": response})
-
+'''
 
 #new
 st.title("Simple chat")
