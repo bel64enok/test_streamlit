@@ -2,6 +2,7 @@
 
 import pandas as pd
 import streamlit as st
+import numpy as np
 
 # Read in data from the Google Sheet.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
@@ -15,3 +16,8 @@ df = load_data(st.secrets["public_gsheets_url"])
 # Print results.
 for row in df.itertuples():
     st.write(f"{row.name} has a :{row.pet}:")
+
+#new chart
+with st.chat_message("assistant"):
+    st.write("new chart")
+    st.bar_chart(np.random.randn(30, 3))
